@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foody Love Restaurant</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:1.6;
+}
+header{
+    background:#111;
+    color:#fff;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+header nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+}
+.hero{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    text-align:center;
+}
+.hero h1{
+    font-size:60px;
+}
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 25px;
+    background:#e67e22;
+    color:#fff;
+    text-decoration:none;
+}
+.section{
+    padding:60px 10%;
+}
+.flex{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+.flex img{
+    width:100%;
+    border-radius:10px;
+}
+.about img{
+    width:400px;
+}
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+.gallery img{
+    width:100%;
+    border-radius:10px;
+}
+.menu-section{
+    background:#f4f4f4;
+}
+.menu-box{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+}
+.menu-box ul{
+    list-style:none;
+    padding:0;
+}
+.menu-box li{
+    padding:10px 0;
+    border-bottom:1px solid #ddd;
+    display:flex;
+    justify-content:space-between;
+}
+.app{
+    background:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') center/cover no-repeat;
+    color:#fff;
+    text-align:center;
+    padding:100px 20px;
+}
+footer{
+    background:#111;
+    color:#fff;
+    padding:40px 10%;
+}
+footer .columns{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+footer input, footer textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    border:none;
+}
+footer button{
+    padding:10px 20px;
+    background:#e67e22;
+    border:none;
+    color:#fff;
+}
+.copyright{
+    text-align:center;
+    padding:10px;
+    background:#000;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Foody Love</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Foody Love</h1>
+        <p>Best delicious food in town</p>
+        <a href="#" class="btn">Click Here</a>
+    </div>
+</section>
+
+<section class="section about">
+    <div class="flex">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="">
+        <div>
+            <h3>About Us</h3>
+            <h2>WE ARE TASTY</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            We provide high quality food and excellent service for our customers.</p>
+            <a href="#" class="btn">Click Here</a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 style="text-align:center;">Special Recipes</h2>
+    <div class="flex">
+        <div>
+            <h3>Taste Precious</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">Click Here</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" width="400">
+    </div>
+</section>
+
+<section class="section">
+    <h2 style="text-align:center;">Delightful Experience</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+        <img src="https://images.unsplash.com/photo-1512058564366-c9e3e0465b4a">
+        <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468">
+        <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327">
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+    </div>
+</section>
+
+<section class="section menu-section">
+    <h2 style="text-align:center;">Amazing Delicious</h2>
+    <div class="flex">
+        <div class="menu-box">
+            <h3>Drinks</h3>
+            <ul>
+                <li><span>Fresh Juice</span><span>$5</span></li>
+                <li><span>Cold Coffee</span><span>$4</span></li>
+                <li><span>Milk Shake</span><span>$6</span></li>
+            </ul>
+        </div>
+        <div class="menu-box">
+            <h3>Main Course</h3>
+            <ul>
+                <li><span>Grilled Chicken</span><span>$14</span></li>
+                <li><span>Beef Steak</span><span>$18</span></li>
+                <li><span>Fish Curry</span><span>$12</span></li>
+            </ul>
+        </div>
+        <div class="menu-box">
+            <h3>Desserts</h3>
+            <ul>
+                <li><span>Chocolate Cake</span><span>$7</span></li>
+                <li><span>Ice Cream</span><span>$5</span></li>
+                <li><span>Brownie</span><span>$6</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="app">
+    <h2>Mobile App</h2>
+    <p>Available on every OS platform</p>
+    <a href="#" class="btn">Google Play</a>
+    <a href="#" class="btn">App Store</a>
+</section>
+
+<footer>
+    <div class="columns">
+        <div>
+            <h3>Contact Info</h3>
+            <p>123 Restaurant Street</p>
+            <p>Phone: 0123456789</p>
+            <p>Email: info@foodylove.com</p>
+        </div>
+        <div>
+            <h3>Opening Hours</h3>
+            <p>Monday - Friday: 8am - 10pm</p>
+            <p>Saturday - Sunday: 10am - 11pm</p>
+        </div>
+        <div>
+            <h3>Take It Easy</h3>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="4" placeholder="Message"></textarea>
+            <button>Click Here</button>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright">
+    © 2026 Foody Love. All Rights Reserved.
+</div>
+
+</body>
+</html>
